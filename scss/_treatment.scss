@@ -1,0 +1,103 @@
+.treatment{
+    background: white;
+    padding-top: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .treatment-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            border: 2px solid $grey;
+            width: 100%;
+            padding: 20px;
+
+            &:hover{
+                border: none;
+                border-bottom: 3px solid $btnColor;
+                box-shadow: 10px 0 30px $grey;
+            }
+            h3{
+                margin-top: 10px;
+                color: $linkColor;
+                font-weight: 100;
+                font-size: 1rem;
+            }
+            &-logo{
+                height: 60px;
+                width: 60px;
+                background: $grey;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                & img{
+                    width: 40px;
+
+                }
+            }
+        }
+    }
+
+    &-text{
+        h2{
+            width: 200px;
+            font-size: 1.5rem;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $btnColor;
+            font-weight: 700;
+        } 
+        p{
+            width: 100%;
+            margin: 20px 0;
+            color: $linkColor;
+        }
+        &-btn{
+            
+
+            button{
+                background: $btnColor;
+                width: 100%;
+                padding: 10px 0;
+                border: none;
+                color: white;
+                font-weight: 700;
+                &:hover{
+                    opacity: .9;
+                }
+            }
+        }
+    }
+
+    .relaxation{
+        margin-top: 50px;
+        h2{
+            width: 200px;
+            font-size: 1.5rem;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $btnColor;
+            font-weight: 700;
+        } 
+        p{
+            width: 100%;
+            margin: 20px 0;
+            color: $linkColor;
+        }
+        &-img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

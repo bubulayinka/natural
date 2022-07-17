@@ -1,0 +1,118 @@
+.second-main{
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    padding-top: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    .product{
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        p{
+            color: $linkColor;
+        }
+        .products-boxes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            .product-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin-bottom: 20px;
+                position: relative;
+               
+                img{
+                    width: 100%;
+                    height: 200px;
+                    margin-bottom: 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .questions{
+        padding-top: 50px;
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        p{
+            color: $linkColor;
+            text-align: center;
+        }
+
+        .question{
+            margin-top: 40px;
+            padding-bottom: 40px;
+            & img{
+                width: 100%;
+                height: 300px;
+            }
+
+            &-text{
+                margin-top: 30px;
+
+                .question-text1{
+                    width: 100%;
+                    border: 1px solid $linkColor;
+                    padding: 15px 5px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    h3{
+                        font-size: 1rem;
+                        color: $lbtn;
+                        font-weight: 700;
+
+                        i{
+                            font-size: 1.2rem;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                .question-text2{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 5px;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    &:hover{
+                        border-bottom: 3px solid $btnColor;
+                        box-shadow: 1px 0px 5px $lbtn;
+                    }
+                    h3{
+                        font-size: 1rem;
+                        color: $lbtn;
+                        font-weight: 700;
+                        margin-bottom: 10px;
+                        display: flex;
+                        align-items: center;
+                        i{
+                            font-size: 1.2rem;
+                            margin-right: 20px;
+                        }
+
+                    }
+                    p{
+                        text-align: left;
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+}

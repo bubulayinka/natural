@@ -1,0 +1,130 @@
+header{
+    position: sticky;
+    
+    height: 8vh;
+    
+    width: 100%;
+    
+    .logo{
+        position: fixed;
+        top: 0;
+        left: 1rem;
+        padding-top: 10px;
+        color: $btnColor;
+        font-size: 1rem;
+         i{
+            
+            position: absolute;
+            top: 4px;
+         }
+    }
+    .logo span{
+        position: absolute;
+        padding-bottom: 20px;
+        text-transform: lowercase;
+        font-weight: 100;
+        left: 33px;
+        
+        z-index: 2;
+        
+
+    }
+    .nav{
+        
+        position: absolute;
+        background: $btnColor;
+        width: 100%;
+        top: 8vh;
+        height: calc(100vh  - 8vh);
+        overflow: hidden;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        clip-path: inset(0 0 100% 0);
+
+        .nav-items{
+            list-style: none;
+
+            li{
+                margin: 20px;
+                a{
+                    text-transform: capitalize;
+                    font-weight: 700;
+                    color: rgb(208, 208, 208);
+
+                    &:hover{
+                        color: $linkColor;
+                    }
+                }
+            }
+
+        }
+
+         &.open{
+            clip-path: inset(0 0 0 0);
+
+         }
+    }
+    .header-logo{
+        position: fixed;
+        top: 0px;
+        right: 1rem;
+        padding-top: 10px;
+        display: none;
+    }
+    .hambuger{
+        position: fixed;
+        top: 0px;
+        right: 1rem;
+        margin-top: 10px;
+        width: 28px;
+        height: 20px;
+        z-index: 1;
+        
+
+        .span{
+            width: 28px;
+            height: 3px;
+            position: absolute;
+            right: 0;
+            background: $btnColor;
+            top: .4rem;
+            
+            &::before{
+                content: "";
+                width: 28px;
+                height: 3px;
+                position: absolute;
+                background: $btnColor;
+                
+                top: -8px;
+            }
+            &::after{
+                content: "";
+                width: 20px;
+                height: 3px;
+                position: absolute;
+                
+                background:  $btnColor;
+                top: 8px;
+            }
+            &.open{
+                transform: rotate(720deg);
+                background: transparent;
+
+                &::before{
+                    transform: rotate(45deg) translate(3px, 8px);
+                }
+                &::after{
+                    width: 28px;
+                    transform: rotate(-45deg) translate(3px, -8px);
+                }
+            }
+            
+        }
+           
+           
+
+            
+    }
+}

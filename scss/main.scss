@@ -1,0 +1,14 @@
+@import 'config';
+@import 'header';
+@import 'hero';
+@import 'maintenance';
+@import 'treatment';
+@import 'secondMain';
+@import 'footer';
+@import 'resposivness';
+
+body{
+    scroll-behavior: smooth;
+    background: linear-gradient(to right, #f6f0e6, #ebe8e6);
+    font-family: 'Heebo', sans-serif;
+}

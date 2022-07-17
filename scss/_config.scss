@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+i{
+    font-size: 2rem;
+}
+$btnColor: #50695e;
+$hColor: #4e4e4c;
+$linkColor: #9e9ea7;
+$lbtn: #7b8c82;
+$grey: #fbfbf8;
+
+@mixin media-md {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+@mixin media-lg {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+@mixin media-xl {
+    @media screen and (min-width:1600px) {
+        @content;
+    }
+}

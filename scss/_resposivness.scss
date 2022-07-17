@@ -1,0 +1,417 @@
+@include media-md{
+    header{
+        
+        .logo{
+           
+            font-size: 1.5rem;
+            
+        }
+        
+        .nav{
+                
+                clip-path: inset(0 0 0 0);
+                display: block;
+                text-align: center;
+                background: 0;
+                height: 100%;
+                position: fixed;
+                top: 20px;
+                margin-top: 0px;
+            .nav-items{
+                list-style: none;
+                
+                li{
+                    margin: 0px 20px;
+                    display: inline-block;
+                    a{
+                        text-transform: capitalize;
+                        font-weight: 700;
+                        color: $linkColor;
+    
+                        &:hover{
+                            color: white;
+                        }
+                    }
+                }
+    
+            }
+    
+            
+        }
+        .header-logo{
+            position: fixed;
+            top: 0px;
+            right: 1rem;
+            padding-top: 10px;
+            
+            display: block;
+            i{
+                color: $linkColor;
+                padding: 0 10px;
+            }
+        }
+        .hambuger{
+            display: none;
+        
+                
+        }
+    }
+}
+@include media-lg{
+    .hero{
+        margin-bottom: 50px;
+        &-right{
+            width: 50%;
+            height: 50vh;
+            float: right;
+        }
+        &-left{
+            float: left;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: flex-start;
+            
+    
+            h2{
+                font-size: 4rem;
+                line-height: 4.5rem;
+                color: $hColor;
+                font-weight: 700;
+                width: 400px;
+            }
+            p{
+                font-size: 1.5rem;
+                width: 90%;
+                line-height: 2rem;
+                margin: 30px 0;
+                color: $linkColor;
+            }
+            &-btn{
+                width: 30%;
+    
+                button{
+                    background: $btnColor;
+                    color: white;
+                    font-size: 14px;
+                    width: 100%;
+                    padding: 10px 0;
+                    border: none;
+                    font-weight: 700;
+    
+                    &:hover{
+                        opacity: .9;
+                    }
+                }
+            }
+    
+            
+        }
+    }
+    .maintenance{
+        margin-top: 400px;
+        background: $btnColor;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        
+     
+        &-divs{
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-between;
+     
+         div{
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: center;
+             margin-bottom: 0px;
+     
+             h3{
+                font-size: 1.5rem;
+                 margin-bottom: 30px;
+                 width: 150px;
+                 margin-top: 20px;
+             }
+            
+         }
+        }
+     }
+     .treatment{
+        background: white;
+        padding-top: 50px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .one{
+            padding-top: 50px;
+            background: white;
+        }
+    
+        &-boxes{
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            float: right;
+            width: 50%;
+            .treatment-box{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                border: 2px solid $grey;
+                width: 100%;
+                padding: 20px;
+    
+                &:hover{
+                    border: none;
+                    border-bottom: 3px solid $btnColor;
+                    box-shadow: 10px 0 30px $grey;
+                }
+                h3{
+                    margin-top: 10px;
+                    color: $linkColor;
+                    font-weight: 100;
+                    font-size: 1rem;
+                }
+                &-logo{
+                    height: 60px;
+                    width: 60px;
+                    background: $grey;
+                    border-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+    
+                    & img{
+                        width: 40px;
+    
+                    }
+                }
+            }
+        }
+    
+        &-text{
+            background: white;
+            float: left;
+            width: 40%;
+            h2{
+                width: 200px;
+                font-size: 1.5rem;
+                padding-bottom: 5px;
+                border-bottom: 2px solid $btnColor;
+                font-weight: 700;
+            } 
+            p{
+                font-size: 1,5rem;
+                line-height: 2rem;
+                width: 500px;
+                margin: 20px 0;
+                color: $linkColor;
+            }
+            &-btn{
+                
+    
+                button{
+                    background: $btnColor;
+                    width: 30%;
+                    padding: 10px 0;
+                    border: none;
+                    color: white;
+                    font-weight: 700;
+                    &:hover{
+                        opacity: .9;
+                    }
+                }
+            }
+        }
+    
+        .relaxation{
+            padding-top: 300px;
+            background: white;
+            .relaxation-text{
+                width: 50%;
+                float: right;
+                padding-top: 50px;
+               
+               
+                h2{
+                    width: 200px;
+                    font-size: 1.5rem;
+                    padding-bottom: 5px;
+                    border-bottom: 2px solid $btnColor;
+                    font-weight: 700;
+                } 
+                p{
+                    width: 80%;
+                    margin: 20px 0;
+                    color: $linkColor;
+                }
+            }
+            
+            .relaxation-img{
+                width: 50%;
+                float: left;
+                
+                    
+                    img{
+                        width: 70%;
+                        
+                    }
+                
+            }
+            
+        }
+    }
+    .second-main{
+        
+        margin-top: 500px;
+        background: linear-gradient(to right, #f0f0f0, #ffffff);
+        padding-top: 50px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .product{
+            h2{
+                text-align: center;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: center;
+                color: $linkColor;
+            }
+            .products-boxes{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                text-align: center;
+                gap: 20px;
+                padding: 30px 0;
+                width: 100%;
+                .product-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    position: relative;
+                   
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        margin-bottom: 10px;
+                        
+                    }
+                }
+            }
+        }
+    
+        .questions{
+            padding-top: 50px;
+            h2{
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            p{
+                color: $linkColor;
+                text-align: center;
+            }
+    
+            .question{
+                margin-top: 40px;
+                padding-bottom: 40px;
+                display: flex;
+                justify-content: space-between;
+                & img{
+                    width: 40%;
+                    height: 300px;
+                }
+    
+                &-text{
+                    margin-top: 30px;
+                    width: 50%;
+                    .question-text1{
+                        width: 100%;
+                        border: 1px solid $linkColor;
+                        padding: 15px 5px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        h3{
+                            font-size: 1rem;
+                            color: $lbtn;
+                            font-weight: 700;
+    
+                            i{
+                                font-size: 1.2rem;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+    
+                    .question-text2{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px 5px;
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        &:hover{
+                            border-bottom: 3px solid $btnColor;
+                            box-shadow: 1px 0px 5px $lbtn;
+                        }
+                        h3{
+                            font-size: 1rem;
+                            color: $lbtn;
+                            font-weight: 700;
+                            margin-bottom: 10px;
+                            display: flex;
+                            align-items: center;
+                            i{
+                                font-size: 1.2rem;
+                                margin-right: 20px;
+                            }
+    
+                        }
+                        p{
+                            text-align: left;
+                            font-size: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background: $btnColor;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        
+            ul{
+                margin:0 30px;
+                m
+                li{
+                    margin: 10px 0;
+                    list-style: none;
+                    color: white;
+                }
+            }
+        
+    }
+}
